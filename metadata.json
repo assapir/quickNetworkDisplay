@@ -1,9 +1,8 @@
 {
-  "name": "gnome-shell-extension-typescript-template",
-  "uuid": "typescript-template@swsnr.de",
-  "description": "Typescript template for GNOME shell extensions",
+  "name": "Network displays quick action",
+  "description": "Create a quick action in the menu for network displays",
+  "uuid": "quickNetworkDisplay@sapir.io",
   "version-name": "0.0.0",
-  "url": "https://github.com/swsnr/gnome-shell-extension-typescript-template",
-  "shell-version": ["45"],
-  "settings-schema": "org.gnome.shell.extensions.typescript-template"
+  "url": "https://github.com/assapir/quickNetworkDisplay",
+  "shell-version": ["46"]
 }

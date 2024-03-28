@@ -13,7 +13,7 @@ dist: compile
 	mkdir -p ./dist/
 	mkdir -p ./build/ui
 	cp -t ./build/ui $(UIDEFS)
-	pnpm dist:format
+	npm run dist:format
 	gnome-extensions pack --force --out-dir dist build \
 		--extra-source=../metadata.json \
 		--extra-source=ui \
@@ -53,7 +53,7 @@ install-package: dist
 
 .PHONY: compile
 compile: $(UIDEFS)
-	pnpm compile
+	npm run compile
 
 .PHONY: clean
 clean:
@@ -61,23 +61,23 @@ clean:
 
 .PHONY: format
 format:
-	pnpm format --write
+	npm run format --write
 
 .PHONY: lint
 lint:
-	pnpm lint
+	npm run lint
 
 .PHONY: check-types
 check-types:
-	pnpm check:types
+	npm run check:types
 
 .PHONY: check
 check: lint check-types
-	pnpm format --check
+	npm run format --check
 
 .PHONY: fix
 fix: format
-	pnpm lint --fix
+	npm run lint --fix
 
 $(UIDEFS): %.ui: %.blp
 	blueprint-compiler compile --output $@ $<
