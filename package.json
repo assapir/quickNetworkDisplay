@@ -1,5 +1,13 @@
 {
-  "license": "MIT",
+  "license": "GPL-2.0-or-later OR MPL-2.0",
+  "author": {
+    "name": "Assaf Sapir",
+    "email": "assaf@sapir.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assapir/quickNetworkDisplay.git"
+  },
   "type": "module",
   "private": true,
   "scripts": {
