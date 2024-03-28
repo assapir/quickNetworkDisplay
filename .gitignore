@@ -1,0 +1,8 @@
+# Packages
+/node_modules/
+
+# Extension artifact
+/dist/
+
+# Build outputs
+/build/
